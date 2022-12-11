@@ -1,0 +1,82 @@
+.required::after {
+    color: 
+    #e6674a;
+    content: " *";
+    display: inline;
+}
+
+.form-group .control-label {
+    padding-right: 0 !important;
+    margin-top: .6rem;
+}
+
+#report-view {
+	text-align: center;
+}
+.loader {
+	display: inline-block;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#report-view .company_name {
+	margin-bottom: 0;
+}
+#report-view .title {
+	font-size: 16px;
+	font-weight: bold;
+}
+#report-view .title.small {
+	font-size: 12px;
+	font-weight: bold;
+}
+#report-view .table {
+	margin-top: 20px;
+}
+#report-view .table th, #report-view .table td {
+	padding: 5px;
+	text-align: left;
+	font-size: 14px;
+}
+#report-view .table b {
+	font-weight: 600;
+}
+#report-view .double-border {
+	border-bottom:4px double #999;
+}
+#report-view .print_button {
+    position:absolute;
+    top:30px;
+    right:0px;
+    padding-right: 16px;
+}
+#report-view .bg-light_1 {
+  background:#e9ecef;
+}
+#report-view .bg-light_2 {
+  background:rgba(0, 0, 0, .05);
+}
+
+@media print {
+  #report-template {
+    visibility: hidden;
+  }
+  .content-wrapper {margin-left: -240px;}
+  #report-view-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .print_button {
+    display: none;
+  }
+}
