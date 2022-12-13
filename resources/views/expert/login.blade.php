@@ -13,7 +13,7 @@
 		<div class="card-body">
 		 <div class="card-content p-2">
 		  <div class="text-center">
-		 		<img src="{{ asset('/logo/'.$settingsinfo->logo)}}"/>
+		 		<img src="{{ asset('/logo/low-res-logo.png')}}"/>
 		 		<hr class="border-secondary">
 		 	</div>
 		  <div class="card-title text-uppercase text-center py-2 text-white">
