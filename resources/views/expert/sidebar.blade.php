@@ -45,18 +45,6 @@
 
       <li>
         <a href="#" class="waves-effect">
-          <i class="fa fa-puzzle-piece"></i><span>Konfigurasi</span><i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="{{url('accounts/head_configuration')}}"><i class="fa fa-cog"></i> Konfigurasi Kepala Akun</a>
-          </li>
-        </ul>
-      </li>
-
-
-      <li>
-        <a href="#" class="waves-effect">
           <i class="fa fa-files-o"></i><span>Voucher</span><i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="sidebar-submenu">
@@ -66,12 +54,6 @@
           <li>
             <a href="{{url('accounts/receive_voucher')}}"><i class="fa fa-book"></i> Voucher Penerimaan</a>
           </li>
-          <!-- <li>
-            <a href="{{url('accounts/journal_voucher')}}"><i class="fa fa-book"></i> Jurnal Voucher  </a>
-          </li> -->
-          <!-- <li>
-            <a href="{{url('accounts/contra_voucher')}}"><i class="fa fa-book"></i> Kontra Voucher </a>
-          </li> -->
         </ul>
       </li>
       @if($user_role_per->admin == 1)
